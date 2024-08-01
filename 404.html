@@ -207,6 +207,19 @@
     <canvas class="snow" id="snow" width="1349" height="400"></canvas>
     <div class="main-text">
         <h1>Error 404 Not Found<br><br>本站还在建设，明天再来吧(灬ꈍ ꈍ灬)</h1>
+        <!--全属性-->
+<video src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" poster="false.png" 
+       autoplay="autoplay" controls="controls" loop="-1">
+    <p>你的浏览器不支持video标签.</p>
+</video>
+
+<!--优雅降级-->
+<video width="320" height="240" controls>
+  <source src="logo.mp4" type="video/mp4"><!--兼容IE9+、Chrome和Safari-->
+  <object data="movie.mp4" width="320" height="240">
+    <embed src="movie.swf" width="320" height="240">
+  </object> 
+</video>
     </div>
     <div class="ground">
         <div class="mound">
