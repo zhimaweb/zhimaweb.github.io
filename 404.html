@@ -206,10 +206,21 @@
 <div class="content">
     <canvas class="snow" id="snow" width="1349" height="400"></canvas>
     <div class="main-text">
-        <h1>这里是ZhimaWeb<br><br>本站还未建设完毕<br><br>过几天再来看看吧<br><br></h1>
-<video src="bugjamp.mp4" type="video/mp4" poster="false.png" 
+        <h1>这里是ZhimaWeb<br><br>本站还未建设完毕  过几天再来看看吧<br><br></h1>
+<!--全属性-->
+<video src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" poster="false.png" 
        autoplay="autoplay" controls="controls" loop="-1">
-    <p>现在！马上！赶紧给老子去换浏览器</p>
+    <p>你的浏览器不支持video标签.</p>
+</video>
+
+<!--优雅降级-->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4"><!--兼容IE9+、Chrome和Safari-->
+  <source src="movie.ogg" type="video/ogg"><!--兼容Firefox、Opera和Chrome-->
+  <source src="movie.webm" type="video/webm"><!--兼容Firefox、Opera和Chrome-->
+  <object data="movie.mp4" width="320" height="240">
+    <embed src="movie.swf" width="320" height="240">
+  </object> 
 </video>
     </div>
     <div class="ground">
